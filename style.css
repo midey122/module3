@@ -1,0 +1,87 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+nav{
+    background-color: lightgray;
+    border: 1px solid black;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    /* gap: 70%; */
+    align-items: center;
+}
+.hambuger {
+  margin-right: 5%;
+  display: none;
+}
+#hambuger2 {
+  margin-right: 5%;
+  display: none;
+  right: 1%;
+  position: absolute;
+}
+.food{
+    /* margin-right: 90%; */
+    font-size: 20px;
+}
+section{
+    padding: 20px;
+}
+section h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.card{
+    background-color: lightgrey;
+    border: 1px solid black;
+    margin-top:30px;
+    padding: 20px;
+    width: 100%;
+}
+.card h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.navbar-nav{
+    display: flex;
+    justify-content: center;
+    gap: 40%;
+    align-items: center;
+    
+}
+.offcanvas-body{
+    text-decoration: none;
+    color: black;
+    display: none;
+}
+@media (max-width: 588px) {
+  .offcanvas-body{
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(254, 231, 188); */
+    width: 100%;
+    position: absolute;
+  }
+  #body {
+    /* margin-top: -100vh; */
+    margin-top: -150vh;
+    height: 100%;
+    transition: 1s;
+  }
+  #nav.toggle {
+    margin-top: 150%;
+  }
+  .hambuger {
+    display: block;
+  }
+  #hambuger2.toggle{
+    display: block;
+    margin-right: 47px;
+  }
+  .food{
+    margin-right: 70%;
+  }
+}
